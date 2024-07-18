@@ -32,4 +32,4 @@ docker build -t neonsunset/helloworld .
 
 ## Docker Hub Location
 To see the output on docker hub please go to: 
-- [Docker Hub](https://hub.docker.com/repository/docker/neonsunset/helloworld/general)
+- [Docker Hub](https://hub.docker.com/r/neonsunset/helloworld)
