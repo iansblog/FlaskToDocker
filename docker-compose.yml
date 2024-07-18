@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  helloworld:
+    container_name: helloworld_container # Naming the container
+    image: neonsunset/helloworld
+    ports:
+      - "80:5000" # Adjust the ports as needed
+    environment:
+      - Message="Text set in the docker-compose.yml!" # Set the Message environment variable
+    volumes:
+      - ./data:/app/data # Mount a volume if needed
+    networks:
+      - helloworld_network
+    restart: always
+
+networks:
+  helloworld_network:
+    driver: bridge
